@@ -1,6 +1,7 @@
 def iniciar_jogo():
 
-    inicio = input("1 - Iniciar Jogo, 2 - Sair")
+    inicio = input("[1] - Iniciar Jogo\n"
+                   "[2] - Sair")
     if(inicio == "1"):
         print("Start")
         nome_jogador1 = input("Insira o nome do jogador 1")
