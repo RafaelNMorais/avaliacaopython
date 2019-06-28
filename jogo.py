@@ -8,7 +8,7 @@ def iniciar_jogo():
     if (inicio == "1"):
         introducao.iniciar_introducao()
         print()
-        nome_jogador = input("Insira o nome do jogador: ")
+        nome_jogador = input("Insira o nome do jogador: \n")
         print()
 
         personagens = inicia_personagem()
@@ -137,66 +137,200 @@ def decisoes3():
             print("Com um olher ameaçador ele fala:")
             print("- Ora ora oque temos aqui, um covarde querendo fugir da encrenca...")
             print("- Já que o amigo aqui está com pressa, passe as suas coisas pra cá, se não quiser problemas...")
-            # combate ou fugir
+            escolha5 = input("[1] - Empunhar sua espada e lutar com o bandido.\n"
+                             "[2] - Empurar o bandido e correr pela estrada.\n"
+                             "Escolha: ")
             print()
     elif (escolha3 == "2"):
         print()
-        # caminho floresta
-
+        print("Logo após sair da cidade você começa a adentrar na floresta.")
+        print("O mato é denso e é preciso andar com cuidado. Uma névoa comaça a surgir estranhamente.")
+        print("Quanto mais adentra a floresta, mais densa a névoa vai ficando.")
+        print("Barulhos estranhos são ouvidos ao longe, uivos de lobos, gritos de corvos...")
+        print("Sons de passos pesados se aproximam...")
+        print(
+            "A névoa começa a sumir, a floresta começa a ficar quieta, só se ouve os sons de passos se aproximando...")
+        print("A névoa some por completo, revelando um cavaleiro com aramdura pesada...")
+        print("Ele te encara, não fala uma palavra... Em sua mão empunha uma espada grande...")
+        print("Você sente uma sensação estranha, como se a morte lhe desse um aperto de mão...")
+        print("O cavaleiro começa a andar lentamente em sua direção...")
         # combate ou fuga
 
-    print()
-    # chegada na gruta
     decisoes4()
 
 
 def decisoes4():
-    # chegada na gruta
-    escolha = input("[1] - Entrar na gruta sem auxilio de luz\n"
-                    "[2] - Acender uma tocha e entrar na gruta\n"
+    print()
+    print("Você chega no pé de uma montanha e avista a entrada da Gruta de Drayhill...")
+    print("Você vai se aproximando da entrada da gruta, está muito escuro pois a noite já caiu.")
+    print("Ao entrar você sente um cheiro estranho, parece ser exofre...")
+    print("Está muito escuro dentro da gruta, você só enxerga poucos metros a sua frente...")
+    print("Você pega uma tocha da sua mochila...")
+    print()
+    escolha = input("[1] - Não acender a tocha e prosseguir\n"
+                    "[2] - Acender a tocha e prosseguir\n"
                     "Escolha: ")
     if (escolha == "1"):
         print()
-        # sem tocha
+        print("Por conta do cheiro de enxofre você acha melhor não acender a tocha.")
+        print("Caso aqui tenha gás natural tudo pode explodir...")
+        print("Você vai seguindo cuidadosamente o caminho da gruta...")
+        print("É um caminho estranho, pois quando mais adentro, mais você vai subindo")
+        print("Após andar por uns 20 minutos na completa escuridão...")
+        print("Você avista uma luz, parece ser de uma tocha ou lampião...")
+        print("Vai se aproximando e encontra uma sala completamente iluminada por tochas.")
+        print("Uma silhueta misteriosa reflete na parede...")
+        print("Parece ser a sombra de um homem, e parece que ele estava esperando por você...")
+        print("Ele percebe sua chegada, com uma voz ecoada ele fala:")
+        print("- Então é você o sujeito que quer estragar a diversão dos outros...")
+        print("Ele se revela e começa a caminha na sua direção...")
+        print("- Achei que você seria mais alto - Ele fala com voz de deboche.")
+        print("- Caso você não me conheça, sou Marco Nove Vidas...")
+        print("- Sabe o porque tenho esse nome? É que já tentaram me matar 9 vezes...")
+        print("- E nenhuma delas conseguiram, então não vai ser você quem vai conseguir...")
+        print("- Já que você veio até aqui, saque a sua espada e lute como um homem...")
     elif (escolha == "2"):
         print()
-    # com tocha
+        print("Você acende a tocha e seu caminho se ilumina.")
+        print("Agora é possível ver algumas escrituras antigas nas paredes.")
+        print()
+        escolha2 = input("[1] - Aproximar a tocha e tentar ler as escrituras.\n"
+                         "[2] - Ignorar as escrituras e seguir em frente.\n"
+                         "Escolha: ")
+        if (escolha2 == "1"):
+            print()
+            print("As escrituras estão em alguma língua que parece ter sido perdida a muito tempo.")
+            print("Mas ao passar a mão sobre elas a tinta sai com facilidade, como se estivesse fresca...")
+            print("Isso significa que tem mais alguém nessa caverna...")
+            print("Como estão escritas em alguma língua já esquecida você ignora e segue o caminho...")
+        elif (escolha2 == "2"):
+            print()
+            print("Você ignora as escrituras pois sua missão é mais importante que isso...")
 
+        print()
+        print("Andar pela caverna não é algo tão difícil com uma tocha em mãos")
+        print("É um caminho estranho, pois quando mais adentro, mais você vai subindo")
+        print("Após uns 10 minutos andando você chega a uma sala completamente iluminada...")
+        print("Uma silhueta misteriosa reflete na parede...")
+        print("Parece ser a sombra de um homem, e parece que ele estava esperando por você...")
+        print("Ele percebe sua chegada, com uma voz ecoada ele fala:")
+        print("- Então é você o sujeito que quer estragar a diversão dos outros...")
+        print("Ele se revela e começa a caminha na sua direção...")
+        print("- Achei que você seria mais alto - Ele fala com voz de deboche.")
+        print("- Caso você não me conheça, sou Marco Nove Vidas...")
+        print("- Sabe o porque tenho esse nome? É que já tentaram me matar 9 vezes...")
+        print("- E nenhuma delas conseguiram, então não vai ser você quem vai conseguir...")
+        print("- Já que você veio até aqui, saque a sua espada e lute como um homem...")
     # combate com Marco Nove vidas
     decisoes5()
 
 
 def decisoes5():
-    # chegada ao Obelisco do Espaço
-
+    print()
+    print("Após uma longa jornada você sabe que tudo está chegando ao fim...")
+    print("Ao sair da gruta você da de cara com a porta de uma torre.")
+    print("Este é o Obelisco do Espaço... Uma torre mágica que foi construida no meio de uma montanha...")
+    print("As portas parecem ser pesadas demais para se abrir, mas quando você se aproxima elas se abrem sozinhas...")
+    print("Uma voz ecoa por toda a torre: ")
+    print("- A profecia já dizia que um guerreiro iria aparecer para atrapalhar...")
+    print("- Venha guerreiro, siga seu destino...")
+    print("Você entra na torra e as portas se fecham atrás de você, é um caminho sem volta...")
+    print()
     escolha = input("[1] - Subir as escadas da torre com cuidado\n"
                     "[2] - Subir as escadas da torre correndo\n"
                     "Escolha: ")
 
     if (escolha == "1"):
         print()
-        # subir cuidado
+        print("Você vai caminhando em direção as escadas e começa a subir...")
+        print("A voz ecoa novamente:")
+        print("- Parece que você não está com pressa para salvar o mundo não é mesmo? Hahaha")
+        print("Estão lhe provocando mas você ignora e continua a subir lentamente...")
     elif (escolha == "2"):
         print()
-        # subir correndo
+        print("Você começa a correr em direção das escada, começa a subir...")
+        print("Mas quanto mais você corre mais sente que não está saindo do lugar...")
+        print("Você olha a sua volta e mal saiu do hall principal da torre...")
+        print("A voz ecoa novamente:")
+        print("- Hahaha seu tolo, nunca te falaram que a pressa é a inimiga da perfeição? Hahaha...")
+        print("Você começa a pensar sobre isso e resolve subir os degraus lentamente...")
+        print("Aparentemente isso funciona, mas você sente que é algo que estão usando só para ganhar tempo.")
+
+    print()
+    print("A torre é grande e você leva cerca de 15 minutos para subir todos os degraus...")
+    print("Ao chegar no topo você observa oque aparente ser um homem de costas para a entrada...")
+    print("Ele notou sua presença e fala:")
+    print("- Ótimo, como a profecia dizia, seu destino já está selado...")
+    print("- Tudo oque preciso fazer agora é matar você e esse velho aqui...")
+    print("Você vê o Ilenor preso em uma cela suspensa")
+    print("- O mundo dos vivos já passou do seu tempo... Está na hora do mundo dos mortos tomar o controle...")
+    print("- Deixa eu me apresentar para você, sou Velazar o Mestre da Escuridão...")
+    print("- Mas você pode me chamar de senhor, já que governarei o mundo hahahaha...")
+    print("Você sabe que precisa fazer alguma coisa.")
+    print("Então você saca sua espada e corre em direção ao necormante")
 
     # combate com Valazar
+    decisoes6()
 
 
 def decisoes6():
     print()
-    # encontro com o Ilenor o Mago
+    print("A batalha com Velazar foi longa e cansativa, mas tudo está tranquilo agora.")
+    print("O mago fala com você:")
+    print("- Rápido meu jovem, me tire daqui para podermos sair desse lugar maldito.")
+    print("Você ajuda Ilenor a sair da cela...")
+    print("Ele agradeçe com a cabeça e fala...")
+    print("- Irei abrir um portal para a cidade, vamos logo...")
+    print()
+    escolha = input("[1] - Falar que irá voltar andando até a cidade\n"
+                    "[2] - Usar o portal que o Ilenor abriu\n"
+                    "Escolha: ")
 
-    escolha = input("[1] - Voltar andando até a cidade\n"
-                    "[2] - Usar o portal que o Ilenor abriu")
+    if (escolha == "1"):
+        print()
+        print("Você fala que prefere voltar caminhando até a cidade...")
+        print("O mago parece não se importar com sua decisão e fala:")
+        print("- Tudo bem, nos encontramos na cidade...")
+        print("Ele entra no portal e some bem na sua frente.")
+        print("Você começa a descer as escadas, passa pela caverna...")
+        print("Na volta você prefere ir pela estrada principal por ser mais segura...")
+        print("Se encontra com uma caravana de comerciantes e segue com eles até a capital...")
+        print("Quando chega na portão da cidade um guarda avista você e grita:")
+        print("- Rápido, abram os portões, o garoto retornou com vida...")
+        print("- Chamem a Princesa Andromeda...")
+        print()
+        print("Você vai caminhando até a praça da cidade...")
+        print("Uma multidão alegre está cercando você, eles gritam e batem palmas para você...")
+        print("A Princesa está te esperando em cima de um palanque com uma multidão em volta.")
+        print("Você sobe e a princesa comaça a falar:")
+        print("- Hoje estamos aqui com um herói, um homem que provou ser leal e bom para seu reino...")
+        print("- Pelo seu feito eu irei lhe declarar agora um homem nobre...")
+        print("- Eu o declaro O Campeão da Capital")
+        print("A população aplaude e grita com muita alegria...")
+        print("Todos estão a salvo graças a você...")
 
-    if(escolha == "1"):
+    elif (escolha == "2"):
         print()
-        # voltar andando
-    elif(escolha == "2"):
+        print("Ilenor abre o portal bem na sua frente...")
+        print("Ele fala:")
+        print("- Vamos garoto, esse portal nos levará para a entrada da cidade...")
+        print("Você e ele entram no portal")
+        print("Você se sente estranho mas essa sensação passa rapidamente...")
+        print("Quando você menos espera está parado em frente aos portões da cidade...")
+        print("Um guarda avista você e Ilenor e grita:")
+        print("- Rápido, abram os portões, o garoto retornou com o Ilenor...")
+        print("- Chamem a Princesa Andromeda...")
         print()
-        # usar o portal
-        
+        print("Você e Ilenor vão caminhando até a praça da cidade...")
+        print("Uma multidão alegre está cercando você, eles gritam e batem palmas para você...")
+        print("A Princesa está te esperando em cima de um palanque com uma multidão em volta.")
+        print("Você sobe e a princesa comaça a falar:")
+        print("- Hoje estamos aqui com um herói, um homem que provou ser leal e bom para seu reino...")
+        print("- Pelo seu feito eu irei lhe declarar agora um homem nobre...")
+        print("- Eu o declaro O Campeão da Capital")
+        print("A população aplaude e grita com muita alegria...")
+        print("Todos estão a salvo graças a você...")
+
 
 if (__name__ == "__main__"):
     iniciar_jogo()
