@@ -28,5 +28,6 @@ def inicia_personagem():
 
     return personagem1, personagem2, personagem3, personagem4
 
+
 if(__name__ == "__main__"):
     iniciar_jogo()
