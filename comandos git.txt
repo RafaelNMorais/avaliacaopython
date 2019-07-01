@@ -1,0 +1,109 @@
+$ git stash list
+stash@{0}: WIP on pdb_python: 47f610d Atividade 04: Fight for life - Iniciando as batalhas
+
+$ git stash show stash@{0}
+ __pycache__/introducao.cpython-37.pyc | Bin 1295 -> 1485 bytes
+ batalhas.py                           |  60 +++++++++++++++++++------------
+ jogo.py                               |  65 ++++++++++++++++++++++++++++++----
+ 3 files changed, 96 insertions(+), 29 deletions(-)
+
+$ git diff master stash@{0}
+diff --git a/__pycache__/jogo.cpython-37.pyc b/__pycache__/jogo.cpython-37.pyc
+new file mode 100644
+index 0000000..a01837d
+Binary files /dev/null and b/__pycache__/jogo.cpython-37.pyc differ
+diff --git a/batalhas.py b/batalhas.py
+new file mode 100644
+index 0000000..089a994
+--- /dev/null
++++ b/batalhas.py
+@@ -0,0 +1,89 @@
++import random
++
++
++def batalha_bandido():
++    hp_jogador = 100
++    hp_inimigo = 100
++    while (hp_jogador > 0 and hp_inimigo > 0):
++        ataque_jogador = random.randrange(1, 21)
++        ataque_inimigo = random.randrange(1, 16)
++        hp_jogador = hp_jogador - ataque_inimigo
++        hp_inimigo = hp_inimigo - ataque_jogador
++        if (hp_inimigo < 0):
++            hp_inimigo = 0
++        elif (hp_jogador < 0):
++            hp_jogador = 0
++        print("Vida total do jogador => {}".format(hp_jogador))
++        print("Dano do ataque do jogador => {}".format(ataque_jogador))
++        print()
+:...skipping...
+diff --git a/__pycache__/jogo.cpython-37.pyc b/__pycache__/jogo.cpython-37.pyc
+new file mode 100644
+index 0000000..a01837d
+Binary files /dev/null and b/__pycache__/jogo.cpython-37.pyc differ
+diff --git a/batalhas.py b/batalhas.py
+new file mode 100644
+index 0000000..089a994
+--- /dev/null
++++ b/batalhas.py
+@@ -0,0 +1,89 @@
++import random
++
++
++def batalha_bandido():
++    hp_jogador = 100
++    hp_inimigo = 100
++    while (hp_jogador > 0 and hp_inimigo > 0):
++        ataque_jogador = random.randrange(1, 21)
++        ataque_inimigo = random.randrange(1, 16)
++        hp_jogador = hp_jogador - ataque_inimigo
++        hp_inimigo = hp_inimigo - ataque_jogador
++        if (hp_inimigo < 0):
++            hp_inimigo = 0
++        elif (hp_jogador < 0):
++            hp_jogador = 0
++        print("Vida total do jogador => {}".format(hp_jogador))
++        print("Dano do ataque do jogador => {}".format(ataque_jogador))
++        print()
++        print("Vida do inimigo = {}".format(hp_inimigo))
++        print("Dano do ataque do inimigo => {}".format(ataque_inimigo))
++        print()
++        input("Pressione Enter para continuar a batalha")
++        print()
++
++
+:
+diff --git a/__pycache__/jogo.cpython-37.pyc b/__pycache__/jogo.cpython-37.pyc
+new file mode 100644
+index 0000000..a01837d
+Binary files /dev/null and b/__pycache__/jogo.cpython-37.pyc differ
+diff --git a/batalhas.py b/batalhas.py
+new file mode 100644
+index 0000000..089a994
+--- /dev/null
++++ b/batalhas.py
+@@ -0,0 +1,89 @@
++import random
++
++
++def batalha_bandido():
++    hp_jogador = 100
++    hp_inimigo = 100
++    while (hp_jogador > 0 and hp_inimigo > 0):
++        ataque_jogador = random.randrange(1, 21)
++        ataque_inimigo = random.randrange(1, 16)
++        hp_jogador = hp_jogador - ataque_inimigo
++        hp_inimigo = hp_inimigo - ataque_jogador
++        if (hp_inimigo < 0):
++            hp_inimigo = 0
++        elif (hp_jogador < 0):
++            hp_jogador = 0
++        print("Vida total do jogador => {}".format(hp_jogador))
++        print("Dano do ataque do jogador => {}".format(ataque_jogador))
++        print()
++        print("Vida do inimigo = {}".format(hp_inimigo))
++        print("Dano do ataque do inimigo => {}".format(ataque_inimigo))
++        print()
++        input("Pressione Enter para continuar a batalha")
++        print()
+:
