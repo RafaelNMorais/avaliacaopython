@@ -1,4 +1,5 @@
 import introducao
+import batalhas
 
 
 def iniciar_jogo():
@@ -127,7 +128,16 @@ def decisoes3():
             print("- Olha só oq eu encontrei por aqui, um engomadinho bisbilhoteiro...")
             print("Ele te ameaça com uma espada curta empunhada.")
             print("- É melhor ir passando suas coisas se não quiser problemas...")
-            # combate ou fugir
+            escolha5 = input("[1] - Empunhar sua espada e lutar com o bandido.\n"
+                             "[2] - Empurar o bandido e correr pela estrada.\n"
+                             "Escolha: ")
+            if(escolha5 == "1"):
+                batalhas.batalha_bandido()
+            elif(escolha5 == "2"):
+                print()
+                print("Você empurra o bandido que caiu sentado no chão...")
+                print("Você sai correndo e o bandido fica sem entender oque aconteceu...")
+                print("Você corre pela estrada em direção a Gruta de Drayhill")
             print()
         elif (escolha4 == "2"):
             print()
@@ -137,9 +147,17 @@ def decisoes3():
             print("Com um olher ameaçador ele fala:")
             print("- Ora ora oque temos aqui, um covarde querendo fugir da encrenca...")
             print("- Já que o amigo aqui está com pressa, passe as suas coisas pra cá, se não quiser problemas...")
-            escolha5 = input("[1] - Empunhar sua espada e lutar com o bandido.\n"
+            escolha6 = input("[1] - Empunhar sua espada e lutar com o bandido.\n"
                              "[2] - Empurar o bandido e correr pela estrada.\n"
                              "Escolha: ")
+            if (escolha6 == "1"):
+                print()
+                batalhas.batalha_bandido()
+            elif (escolha6 == "2"):
+                print()
+                print("Você empurra o bandido que caiu sentado no chão...")
+                print("Você sai correndo e o bandido fica sem entender oque aconteceu...")
+                print("Você corre pela estrada em direção a Gruta de Drayhill")
             print()
     elif (escolha3 == "2"):
         print()
@@ -154,8 +172,19 @@ def decisoes3():
         print("Ele te encara, não fala uma palavra... Em sua mão empunha uma espada grande...")
         print("Você sente uma sensação estranha, como se a morte lhe desse um aperto de mão...")
         print("O cavaleiro começa a andar lentamente em sua direção...")
-        # combate ou fuga
-
+        print()
+        escolha7 = input("[1] - Empunhar a espada e atacar o cavaleiro.\n"
+                         "[2] - Sair correndo pela sua vida.\n"
+                         "Escolha: ")
+        print()
+        if(escolha7 == "1"):
+            print()
+            batalhas.batalha_artorias()
+        elif(escolha7 == "2"):
+            print()
+            print("Você sabe que essa seria uma batalha perigosa...")
+            print("Então fez o correto em fugir...")
+            print("Você corre no meio da floresta em rumo a Gruta Drayhill.")
     decisoes4()
 
 
@@ -221,7 +250,18 @@ def decisoes4():
         print("- Sabe o porque tenho esse nome? É que já tentaram me matar 9 vezes...")
         print("- E nenhuma delas conseguiram, então não vai ser você quem vai conseguir...")
         print("- Já que você veio até aqui, saque a sua espada e lute como um homem...")
-    # combate com Marco Nove vidas
+        print()
+        escolha3 = input("[1] - Sacar a espada e lutar contra o Marco.\n"
+                         "[2] - Convencer o Marco a te deixar passar.\n"
+                         "Escolha: ")
+        if(escolha3 == "1"):
+            print()
+            batalhas.batalha_marco()
+        elif(escolha3 == "2"):
+            print()
+            print("Você conversa com o Marco e tenta convencer ele a lhe deixar passar...")
+            print("No inicio ele acha bobagem...")
+            print("Mas depois ele percebe que oque ele está fazendo é errado e lhe concede passagem...")
     decisoes5()
 
 
@@ -268,8 +308,19 @@ def decisoes5():
     print("- Mas você pode me chamar de senhor, já que governarei o mundo hahahaha...")
     print("Você sabe que precisa fazer alguma coisa.")
     print("Então você saca sua espada e corre em direção ao necormante")
-
-    # combate com Valazar
+    print()
+    escolha2 = input("[1] - Atacar Velazar.\n"
+                     "[2] - Convencer ele a libartar o mago.\n"
+                     "Escolha: ")
+    if(escolha2 == "1"):
+        print()
+        batalhas.batalha_velazar()
+    elif(escolha2 == "2"):
+        print()
+        print("Você tenta conversar com Velazar mas é inútil...")
+        print("- Seu tolo, acha mesmo que eu me renderia a você? Um mero mortal? Hahaha...")
+        print()
+        batalhas.batalha_velazar()
     decisoes6()
 
 
